@@ -1,0 +1,104 @@
+@import "../../assets/styles/variables";
+
+.dropdown {
+  position: relative;
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+}
+
+.dropdown.opened .button svg {
+  transform: rotate(180deg);
+}
+
+.button {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $primary;
+  background-color: transparent;
+  border-radius: 90px;
+  border: 2px solid $primary;
+  cursor: pointer;
+  transition: color 0.15s linear, background-color 0.15s linear;
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 24px;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+}
+
+.button:hover,
+.button:focus, {
+  color: $white;
+  background-color: $primary;
+
+  path {
+    stroke: $white;
+  }
+}
+
+.button svg {
+  transition: transform 0.15s linear;
+  pointer-events: none;
+}
+
+.button path {
+  stroke: $primary;
+  transition: stroke 0.15s linear;
+}
+
+.list {
+  position: absolute;
+  top: calc(100% + 8px);
+  width: 100%;
+  border-radius: 24px;
+  background: $white;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+}
+
+.list > *:not(:last-child) {
+  border-bottom: 1px solid $primary;
+}
+
+.opt {
+  display: flex;
+  padding: 12px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: $primary;
+  cursor: pointer;
+  transition: background-color 0.15s linear, color 0.15s linear;
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 0;
+  }
+}
+
+.opt.active {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.opt.active,
+.opt:hover,
+.opt:focus {
+  background-color: $primary;
+  color: $white;
+}

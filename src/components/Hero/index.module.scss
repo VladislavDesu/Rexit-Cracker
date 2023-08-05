@@ -1,0 +1,84 @@
+@import "../../assets/styles/variables";
+
+.hero {
+  padding: 170px 0 285px;
+  color: $white;
+  background-image: url("../../assets/images/hero.png");
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    padding: 60px 0 100px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.info {
+  position: relative;
+  padding: 32px 80px 60px 0;
+  width: 50%;
+  background-color: rgba(139, 179, 125, 0.80);
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100%;
+  background: rgba(139, 179, 125, 0.80);
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.block {
+  box-shadow: inset -1px 0 0 0 $white;
+
+  @media screen and (max-width: 768px) {
+    box-shadow: none;
+  }
+}
+
+.title {
+  position: relative;
+  left: 110%;
+  width: 130%;
+
+  @media screen and (max-width: 768px) {
+    position: static;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.text {
+  padding-right: 24px;
+  text-align: right;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @media screen and (max-width: 768px) {
+    position: static;
+  }
+}

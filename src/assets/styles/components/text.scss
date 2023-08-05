@@ -1,0 +1,78 @@
+.title1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.title2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.title3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.text-menu {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-button {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.text-small {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
