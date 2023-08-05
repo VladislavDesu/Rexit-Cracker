@@ -39,7 +39,10 @@ const Cart = () => {
 
     return (
         <div ref={ref}>
-            <button onClick={toggleDropdown} className={[styles.details, "text-menu"].join(" ")}>
+            <button
+                onClick={toggleDropdown}
+                className={[styles.details, isOpened ? styles.opened : "", "text-menu"].join(" ")}
+            >
                 details
                 <IconChevron/>
             </button>
