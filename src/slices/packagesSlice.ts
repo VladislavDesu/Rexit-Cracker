@@ -36,6 +36,4 @@ export const packagesSlice = createSlice({
     reducers: {},
 });
 
-export const {} = packagesSlice.actions;
-
 export default packagesSlice.reducer;
